@@ -2,6 +2,7 @@ const express=require("express");
 const path=require("path");
 const usuariosRutas=require("./routes/usuariosRutas");
 const app=express();
+const port = process.env.PORT || 3000;
 
 app.use("/",express.static(path.join(__dirname, "/web")));
 app.set("view engine","ejs");
